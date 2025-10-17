@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>머니루틴 | 하루 30분, 월 1억 수익 루틴</title>
+<style>
+:root{
+  --bg:#002e2c;
+  --accent:#ffda00;
+  --dark:#00423e;
+  --muted:#cfd8d8;
+  --card:#013633;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, 'Noto Sans KR', system-ui, sans-serif; background:var(--bg); color:#fff; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+.container{max-width:1100px;margin:0 auto;padding:28px;}
+.header{padding:48px 16px;text-align:center;background:linear-gradient(180deg, rgba(1,64,61,0.9), rgba(0,46,44,0.95));}
+.header h1{margin:0;font-size:2.4rem;color:var(--accent);line-height:1.15;}
+.header p{color:var(--muted);margin-top:12px;font-size:1.05rem;}
+.cta{display:inline-block;margin-top:18px;background:linear-gradient(90deg,var(--accent),#fff04d);color:var(--bg);padding:14px 26px;border-radius:12px;font-weight:700;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,0.45);transition:transform .18s ease,box-shadow .18s ease;}
+.cta:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.55);}
+
+/* animated gradient background */
+.hero-bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(800px 800px at 10% 20%, rgba(1,133,120,0.12), transparent 10%), radial-gradient(700px 700px at 90% 80%, rgba(255,218,0,0.06), transparent 12%);pointer-events:none;animation:floatbg 12s linear infinite;}
+@keyframes floatbg{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}
+
+/* sections */
+.section{padding:48px 16px;}
+.section .title{color:var(--accent);font-size:1.6rem;margin-bottom:10px;text-align:center;}
+.card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,0.45);}
+
+/* product layout */
+.product-wrap{display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center;}
+.product-cover{flex:0 0 240px;}
+.product-cover img{width:100%;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.5);}
+.product-info{flex:1;min-width:260px;}
+.product-info ul{list-style:none;padding:0;margin:12px 0 18px;}
+.product-info li{margin:8px 0;padding-left:26px;position:relative;font-size:1rem;}
+.product-info li::before{content:'✅';position:absolute;left:0;color:var(--accent);}
+
+/* testimonials */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+.testi{background:#012f2d;padding:16px;border-radius:10px;font-size:0.95rem;}
+
+/* payment */
+.payment{display:flex;flex-direction:column;gap:12px;align-items:center;}
+.pay-btn{width:320px;max-width:92%;padding:14px 18px;border-radius:12px;border:0;font-weight:800;background:linear-gradient(90deg,var(--accent),#fff04d);color:var(--bg);cursor:pointer;box-shadow:0 8px 28px rgba(0,0,0,0.45);transition:transform .12s ease;}
+.pay-btn:active{transform:translateY(2px)}
+
+/* micro sparkle effect */
+@keyframes sparkle{0%{opacity:0;transform:scale(.6)}50%{opacity:1;transform:scale(1.05)}100%{opacity:0;transform:scale(1)}}
+.sparkle{position:absolute;inset:auto 10% 70% auto;width:12px;height:12px;border-radius:50%;background:var(--accent);filter:blur(6px);opacity:0;animation:sparkle 2s infinite;}
+
+/* responsive */
+@media (max-width:800px){
+  .header h1{font-size:1.6rem}
+  .product-wrap{flex-direction:column-reverse;align-items:center}
+  .product-cover{flex-basis:180px}
+}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.small{font-size:0.95rem;color:var(--muted);text-align:center;margin-top:6px}
+.footer{padding:24px;text-align:center;color:#9fb;opacity:.9}
+.note{font-size:0.9rem;color:#9fb;text-align:center;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="hero-bg" aria-hidden="true"></div>
+<header class="header container">
+  <h1>💰 당신의 하루 30분이 돈을 부릅니다.</h1>
+  <p>노동 대신 시스템이 일하게 만드는 디지털 수익 루틴</p>
+  <a class="cta" href="#buy">👉 지금 바로 49,000원 스터디 시작하기</a>
+</header>
+
+<main>
+<section class="section container" id="about">
+  <div class="card reveal">
+    <p class="title">왜 머니루틴인가?</p>
+    <p class="small">노력은 충분했습니다. 이제 구조가 필요할 뿐입니다. 머니루틴은 하루 30분 투자로 '돈이 스스로 일하는 구조'를 만드는 실전 가이드입니다.</p>
+  </div>
+</section>
+
+<section class="section container" id="product">
+  <div class="card reveal">
+    <p class="title">상품 안내</p>
+    <div class="product-wrap">
+      <div class="product-cover"><img src="images/book-cover.png" alt="책 표지"></div>
+      <div class="product-info">
+        <h2 style="margin:0 0 8px">《하루 30분, 월 1억 수익 루틴 만들기》</h2>
+        <p class="small">당신의 경험을 디지털 자산으로 바꾸는 실전 설계도. 전자책 + 템플릿 + VOD 요약 제공.</p>
+        <ul>
+          <li>평범한 경험으로 수익을 만드는 법</li>
+          <li>자사몰 구축 실전 가이드</li>
+          <li>광고로 자동 판매 구조 완성</li>
+          <li>1주차 체크리스트 & 템플릿 포함</li>
+        </ul>
+        <div class="note">🎁 보너스: 전자책 템플릿 + 홍보 문구 샘플 포함</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="testimonials">
+  <div class="card reveal">
+    <p class="title">실제 후기</p>
+    <div class="grid">
+      <div class="testi">“단 2주 만에 첫 수익이 생겼어요. 템플릿 덕분에 빠르게 준비할 수 있었습니다.”</div>
+      <div class="testi">“전자책이 팔리면서, 제 경험이 자산이 된 기분이에요. 운영법이 실전적입니다.”</div>
+      <div class="testi">“하루 한 시간 투자로 월급 외 수입이 생겼습니다. 광고 세팅 가이드가 핵심이었어요.”</div>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="buy">
+  <div class="card reveal payment">
+    <p class="title">지금 바로 시작하세요</p>
+    <p class="small">49,000원으로 평생 자동수익 루틴 배우기 — 즉시 다운로드</p>
+
+    <!-- Toss sandbox simulation (GET to sandbox URL) -->
+    <form action="https://sandbox.tosspayments.com/payments" method="GET" target="_blank" onsubmit="onPayment('토스');return true;">
+      <input type="hidden" name="amount" value="49000">
+      <input type="hidden" name="orderId" value="MR_SANDBOX_001">
+      <input type="hidden" name="orderName" value="하루30분_수익루틴_전자책">
+      <button class="pay-btn" type="submit">💳 토스페이먼츠 테스트 결제 — 49,000원</button>
+    </form>
+
+    <!-- KakaoPay sandbox simulation -->
+    <form action="https://sandbox.kakaopay.com/v1/payment/ready" method="POST" target="_blank" onsubmit="onPayment('카카오페이');return true();">
+      <input type="hidden" name="amount" value="49000">
+      <input type="hidden" name="orderId" value="MR_SANDBOX_002">
+      <input type="hidden" name="orderName" value="하루30분_수익루틴_전자책">
+      <button class="pay-btn" type="submit">💛 카카오페이 테스트 결제 — 49,000원</button>
+    </form>
+
+    <div style="width:100%;max-width:420px;margin-top:12px;position:relative">
+      <div class="sparkle" style="right:14%;top:-18%"></div>
+    </div>
+
+    <p class="note">환불 정책: 다운로드 내역이 없을 경우에 한해 구매 후 7일 이내 환불 가능</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  © 2025 MoneyRoutine | 디지털 루틴으로 경제적 자유를. &nbsp; 문의: help@moneyroutine.co.kr
+</footer>
+
+<script>
+// simple reveal-on-scroll
+const rev = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.classList.add('visible');
+  });
+},{threshold:0.15});
+rev.forEach(r=>io.observe(r));
+
+function onPayment(type){
+  console.log('결제 시뮬레이션 시작:', type);
+  alert(type + ' 테스트 결제 창이 열립니다 (샌드박스).');
+}
+</script>
+</body>
+</html>
